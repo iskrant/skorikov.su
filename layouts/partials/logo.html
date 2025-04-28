@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Золотое пламя - мазок масляной краски</title>
+  <meta charset="UTF-8">
+  <title>Логотип S</title>
 </head>
-<body>
-    <div class="canvas-container">
-        <img src="assets/images/logo2-small.png" alt="QR-код" class="qrcode">
+<body style="margin:0; background:#111; display:flex; justify-content:center; align-items:center; height:100vh;">
 
-        <div class="canvas-texture"></div>
-    </div>
+<svg viewBox="0 0 500 500" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFC300"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="#111"/>
+
+  <!-- Мазковая S -->
+  <path d="
+    M 380 90
+    C 300 20, 120 20, 120 140
+    C 120 200, 300 180, 300 250
+    C 300 320, 100 320, 120 420
+    C 140 480, 350 460, 380 370"
+    fill="none"
+    stroke="url(#goldGradient)"
+    stroke-width="50"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-dasharray="20,10,5,10"
+    />
+</svg>
+
 </body>
 </html>

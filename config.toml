@@ -2,6 +2,9 @@ baseURL      = "https://paint.skorikov.su"
 title        = "Skorikov Igor Painting"
 disableKinds = ["section", "taxonomy", "term"]
 
+[render]
+  timeout = "2m"
+
 [params]
     # Set to enable Plausible Analytics.
     plausible_domain = ""
@@ -67,6 +70,3 @@ disableKinds = ["section", "taxonomy", "term"]
         target = "static"
     [[module.imports]]
         path = "github.com/bep/gallerydeluxe"
-
-[render]
-  timeout = "2m"

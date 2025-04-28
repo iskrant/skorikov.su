@@ -94,13 +94,13 @@
                 </pattern>
 
                 <clipPath id="brush-stroke">
-                    <path d="M300,450 C320,350 350,200 400,100 C420,50 450,30 480,50 C550,100 580,200 550,350 C520,450 480,500 420,450 C380,420 320,480 300,450 Z"/>
+                    <path d="M375,450 C380,350 390,200 400,100 C405,50 410,30 415,50 C430,100 440,200 430,350 C425,450 420,500 410,450 C395,420 370,480 375,450 Z"/>
                 </clipPath>
             </defs>
 
             <!-- Основа мазка золотой краской -->
             <path class="paint-stroke"
-                  d="M300,450 C320,350 350,200 400,100 C420,50 450,30 480,50 C550,100 580,200 550,350 C520,450 480,500 420,450 C380,420 320,480 300,450 Z"
+                  d="M375,450 C380,350 390,200 400,100 C405,50 410,30 415,50 C430,100 440,200 430,350 C425,450 420,500 410,450 C395,420 370,480 375,450 Z"
                   fill="url(#gold-gradient)"
                   stroke="#7a5c00"
                   stroke-width="4"
@@ -109,189 +109,189 @@
             <!-- Текстура мазка краски -->
             <g clip-path="url(#brush-stroke)">
                 <g class="flame-container">
-                    <!-- Динамические языки пламени вытянутые вверх как у свечи -->
-                    <path class="flame-stroke flame1" stroke="url(#flame-gradient)" stroke-width="30" opacity="0.8">
+                    <!-- Динамические языки пламени вытянутые вверх как у свечи (более узкие) -->
+                    <path class="flame-stroke flame1" stroke="url(#flame-gradient)" stroke-width="15" opacity="0.8">
                         <animate attributeName="d"
                                  dur="2.8s"
                                  repeatCount="indefinite"
-                                 values="M380,450 C390,350 395,250 400,150 S410,50 420,100;
-                                         M380,450 C385,330 395,230 405,130 S415,40 420,100;
-                                         M380,450 C395,370 400,270 395,170 S405,70 420,100;
-                                         M380,450 C390,350 395,250 400,150 S410,50 420,100"
+                                 values="M390,450 C395,350 398,250 400,150 S402,50 405,100;
+                                         M390,450 C392,330 397,230 402,130 S404,40 405,100;
+                                         M390,450 C396,370 399,270 397,170 S401,70 405,100;
+                                         M390,450 C395,350 398,250 400,150 S402,50 405,100"
                                  />
                     </path>
 
-                    <path class="flame-stroke flame2" stroke="url(#flame-gradient)" stroke-width="20" opacity="0.9">
+                    <path class="flame-stroke flame2" stroke="url(#flame-gradient)" stroke-width="10" opacity="0.9">
                         <animate attributeName="d"
                                  dur="3.2s"
                                  repeatCount="indefinite"
-                                 values="M400,430 C410,330 420,230 425,130 S430,30 435,80;
-                                         M400,430 C415,320 425,220 430,120 S435,20 435,80;
-                                         M400,430 C405,340 415,240 420,140 S425,40 435,80;
-                                         M400,430 C410,330 420,230 425,130 S430,30 435,80"
+                                 values="M400,430 C402,330 404,230 406,130 S408,30 410,80;
+                                         M400,430 C404,320 407,220 409,120 S412,20 410,80;
+                                         M400,430 C401,340 403,240 405,140 S407,40 410,80;
+                                         M400,430 C402,330 404,230 406,130 S408,30 410,80"
                                  />
                     </path>
 
-                    <path class="flame-stroke flame3" stroke="url(#flame-gradient)" stroke-width="15" opacity="0.85">
+                    <path class="flame-stroke flame3" stroke="url(#flame-gradient)" stroke-width="8" opacity="0.85">
                         <animate attributeName="d"
                                  dur="2.5s"
                                  repeatCount="indefinite"
-                                 values="M420,400 C425,300 430,200 435,100 S440,20 445,70;
-                                         M420,400 C430,290 435,190 440,90 S445,10 445,70;
-                                         M420,400 C420,310 425,210 430,110 S435,30 445,70;
-                                         M420,400 C425,300 430,200 435,100 S440,20 445,70"
+                                 values="M405,400 C407,300 409,200 412,100 S414,20 415,70;
+                                         M405,400 C409,290 412,190 414,90 S416,10 415,70;
+                                         M405,400 C406,310 408,210 410,110 S412,30 415,70;
+                                         M405,400 C407,300 409,200 412,100 S414,20 415,70"
                                  />
                     </path>
 
-                    <!-- Частицы пламени, вытянутые вверх как у свечи -->
-                    <circle class="particle" r="3" fill="#fffacd">
-                        <animate attributeName="cx" values="395;397;400;403;405" dur="3s" repeatCount="indefinite" />
+                    <!-- Частицы пламени, вытянутые вверх как у свечи (более узкие) -->
+                    <circle class="particle" r="2" fill="#fffacd">
+                        <animate attributeName="cx" values="398;399;400;401;402" dur="3s" repeatCount="indefinite" />
                         <animate attributeName="cy" values="300;250;200;150;100" dur="3s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="0.9;0.7;0.5;0.3;0" dur="3s" repeatCount="indefinite" />
                     </circle>
 
-                    <circle class="particle" r="2" fill="#fffacd">
-                        <animate attributeName="cx" values="410;412;415;417;420" dur="2.5s" repeatCount="indefinite" />
+                    <circle class="particle" r="1.5" fill="#fffacd">
+                        <animate attributeName="cx" values="402;403;404;405;406" dur="2.5s" repeatCount="indefinite" />
                         <animate attributeName="cy" values="320;270;220;170;120" dur="2.5s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="0.8;0.6;0.4;0.2;0" dur="2.5s" repeatCount="indefinite" />
                     </circle>
 
-                    <circle class="particle" r="2.5" fill="#fffacd">
-                        <animate attributeName="cx" values="430;428;425;422;420" dur="3.2s" repeatCount="indefinite" />
+                    <circle class="particle" r="1.8" fill="#fffacd">
+                        <animate attributeName="cx" values="410;408;406;404;402" dur="3.2s" repeatCount="indefinite" />
                         <animate attributeName="cy" values="280;230;180;130;80" dur="3.2s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="0.9;0.7;0.5;0.3;0" dur="3.2s" repeatCount="indefinite" />
                     </circle>
 
-                    <circle class="particle" r="1.5" fill="#fffacd">
-                        <animate attributeName="cx" values="405;407;410;413;415" dur="2.8s" repeatCount="indefinite" />
+                    <circle class="particle" r="1" fill="#fffacd">
+                        <animate attributeName="cx" values="397;398;399;400;401" dur="2.8s" repeatCount="indefinite" />
                         <animate attributeName="cy" values="350;300;250;200;150" dur="2.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="0.9;0.7;0.5;0.3;0" dur="2.8s" repeatCount="indefinite" />
                     </circle>
 
-                    <circle class="particle" r="2" fill="#fffacd">
-                        <animate attributeName="cx" values="420;422;425;427;430" dur="3.5s" repeatCount="indefinite" />
+                    <circle class="particle" r="1.2" fill="#fffacd">
+                        <animate attributeName="cx" values="403;404;405;406;407" dur="3.5s" repeatCount="indefinite" />
                         <animate attributeName="cy" values="290;240;190;140;90" dur="3.5s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="0.8;0.6;0.4;0.2;0" dur="3.5s" repeatCount="indefinite" />
                     </circle>
                 </g>
 
-                <!-- Блики на золоте, адаптированные под форму свечи -->
-                <ellipse cx="400" cy="200" rx="15" ry="25" fill="#fffacd" opacity="0.4">
+                <!-- Блики на золоте, адаптированные под узкую форму свечи -->
+                <ellipse cx="400" cy="200" rx="6" ry="20" fill="#fffacd" opacity="0.4">
                     <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite" />
                 </ellipse>
 
-                <ellipse cx="420" cy="150" rx="12" ry="30" fill="#fffacd" opacity="0.35">
+                <ellipse cx="402" cy="150" rx="5" ry="25" fill="#fffacd" opacity="0.35">
                     <animate attributeName="opacity" values="0.35;0.65;0.35" dur="3.5s" repeatCount="indefinite" />
                 </ellipse>
 
-                <ellipse cx="440" cy="250" rx="18" ry="35" fill="#fffacd" opacity="0.3">
+                <ellipse cx="405" cy="250" rx="7" ry="30" fill="#fffacd" opacity="0.3">
                     <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.8s" repeatCount="indefinite" />
                 </ellipse>
 
-                <!-- Имитация расплавленной золотой краски в нижней части свечи -->
-                <path d="M350,20 C370,30 390,1425 410,428 C430,430 450,425 470"
-                      fill="none"
-                      stroke="url(#gold-gradient)"
-                      stroke-width="15"
-                      opacity="0.7"
-                      stroke-linecap="round"
-                      filter="url(#glow)"/>
-
-                <!-- Подтеки золотой краски -->
-                <path d="M400,1380 C402,400 405,420 408,440"
-                      fill="none"
-                      stroke="url(#gold-gradient)"
-                      stroke-width="10"
-                      opacity="0.6"
-                      stroke-linecap="round"
-                      filter="url(#glow)"/>
-
-                <path d="M440,370 C442,390 445,410 447,430"
+                <!-- Имитация расплавленной золотой краски в нижней части свечи (узкая версия) -->
+                <!-- <path d="M380,420 C385,430 395,425 400,428 C405,430 410,425 415,427 C420,430 425,425 430,415"
                       fill="none"
                       stroke="url(#gold-gradient)"
                       stroke-width="8"
+                      opacity="0.7"
+                      stroke-linecap="round"
+                      filter="url(#glow)"/> -->
+
+                <!-- Подтеки золотой краски (узкая версия) -->
+                <!-- <path d="M395,380 C396,400 397,420 398,440"
+                      fill="none"
+                      stroke="url(#gold-gradient)"
+                      stroke-width="5"
+                      opacity="0.6"
+                      stroke-linecap="round"
+                      filter="url(#glow)"/> -->
+
+                <!-- <path d="M405,370 C406,390 407,410 408,430"
+                      fill="none"
+                      stroke="url(#gold-gradient)"
+                      stroke-width="4"
                       opacity="0.5"
                       stroke-linecap="round"
-                      filter="url(#glow)"/>
+                      filter="url(#glow)"/> -->
 
                 <rect x="0" y="0" width="800" height="600" fill="url(#brush-texture)" opacity="0.15" style="mix-blend-mode: overlay;"/>
             </g>
 
-            <!-- Грубая текстура масляной краски поверх мазка -->
+            <!-- Грубая текстура масляной краски поверх мазка (узкая версия) -->
             <g class="brush-texture">
                 <!-- Горизонтальные мазки для текстуры -->
-                <!-- <path d="M320,430 C350,428 380,432 410,428 C440,425 470,429 500,427"
+                <!-- <path d="M380,430 C390,428 400,432 410,428 C415,425 420,429 425,427"
                       fill="none"
                       stroke="#ffd700"
-                      stroke-width="6"
+                      stroke-width="4"
                       opacity="0.25"
                       stroke-linecap="round"/>
 
-                <path d="M330,380 C360,375 390,385 420,380 C450,375 480,383 510,378"
+                <path d="M380,380 C390,375 400,385 410,380 C415,375 420,383 425,378"
                       fill="none"
                       stroke="#b8860b"
-                      stroke-width="8"
+                      stroke-width="5"
                       opacity="0.2"
                       stroke-linecap="round"/>
 
-                <path d="M350,330 C380,325 410,335 440,330 C470,325 490,333 510,329"
+                <path d="M385,330 C395,325 405,335 415,330 C420,325 425,333 430,329"
                       fill="none"
                       stroke="#ffd700"
-                      stroke-width="7"
+                      stroke-width="4"
                       opacity="0.3"
                       stroke-linecap="round"/> -->
 
                 <!-- Вертикальные мазки для текстуры -->
-                <path d="M380,420 C378,380 382,340 378,300 C375,260 379,220 377,180"
+                <path d="M390,420 C389,380 391,340 389,300 C388,260 390,220 389,180"
                       fill="none"
                       stroke="#7a5c00"
-                      stroke-width="5"
-                      opacity="1.2"
+                      stroke-width="3"
+                      opacity="0.2"
                       stroke-linecap="round"/>
 
-                <path d="M420,400 C418,350 422,300 418,250 C415,200 419,150 417,100"
+                <path d="M400,400 C399,350 401,300 399,250 C398,200 400,150 399,100"
                       fill="none"
                       stroke="#b8860b"
-                      stroke-width="7"
+                      stroke-width="4"
                       opacity="0.15"
                       stroke-linecap="round"/>
 
-                <path d="M460,380 C458,330 462,280 458,230 C455,180 459,130 457,80"
+                <path d="M410,380 C409,330 411,280 409,230 C408,180 410,130 409,80"
                       fill="none"
                       stroke="#ffd700"
-                      stroke-width="6"
+                      stroke-width="3"
                       opacity="0.1"
                       stroke-linecap="round"/>
 
                 <!-- Диагональные мазки для текстуры -->
-                <!-- <path d="M340,400 C360,350 380,300 400,250 C420,200 440,150 460,100"
+                <!-- <path d="M385,400 C390,350 395,300 400,250 C405,200 410,150 415,100"
                       fill="none"
                       stroke="#ffcc33"
-                      stroke-width="4"
+                      stroke-width="2"
                       opacity="0.2"
-                      stroke-linecap="round"/> -->
+                      stroke-linecap="round"/>
 
-                <!-- <path d="M380,410 C400,360 420,310 440,260 C460,210 480,160 500,110"
+                <path d="M395,410 C400,360 405,310 410,260 C415,210 420,160 425,110"
                       fill="none"
                       stroke="#ffd700"
-                      stroke-width="5"
+                      stroke-width="3"
                       opacity="0.15"
                       stroke-linecap="round"/> -->
             </g>
 
-            <!-- Объемные неровности мазка масляной краски -->
-            <path d="M320,420 C350,415 380,412 410,416 C440,420 470,415 500,418"
+            <!-- Объемные неровности мазка масляной краски (узкая версия) -->
+            <path d="M380,420 C390,415 400,412 410,416 C415,420 420,415 425,418"
                   fill="none"
                   stroke="#7a5c00"
-                  stroke-width="10"
+                  stroke-width="6"
                   opacity="0.15"
                   stroke-linecap="round"
                   filter="url(#glow)"/>
 
-            <path d="M350,370 C380,365 410,362 440,366 C470,370 500,365 520,368"
+            <path d="M385,370 C395,365 405,362 415,366 C420,370 425,365 430,368"
                   fill="none"
                   stroke="#ffd700"
-                  stroke-width="8"
+                  stroke-width="5"
                   opacity="0.2"
                   stroke-linecap="round"
                   filter="url(#glow)"/>

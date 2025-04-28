@@ -67,3 +67,6 @@ disableKinds = ["section", "taxonomy", "term"]
         target = "static"
     [[module.imports]]
         path = "github.com/bep/gallerydeluxe"
+
+[render]
+  timeout = "60s"

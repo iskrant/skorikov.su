@@ -69,4 +69,4 @@ disableKinds = ["section", "taxonomy", "term"]
         path = "github.com/bep/gallerydeluxe"
 
 [render]
-  timeout = "60s"
+  timeout = "2m"

@@ -5,8 +5,7 @@ disableKinds = ["section", "taxonomy", "term"]
 [render]
   timeout = "2m"
 
-[timeout]
-render = "2m"
+
 
 [params]
     # Set to enable Plausible Analytics.

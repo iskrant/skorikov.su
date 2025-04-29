@@ -24,5 +24,6 @@ body {
 
 .logo:hover {
   cursor: pointer;
-  color: #ffe0c9;
+  color: #ff5e00e8;
+  text-shadow: 0.8px 0.8px;
 }

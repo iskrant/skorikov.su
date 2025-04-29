@@ -5,6 +5,9 @@ disableKinds = ["section", "taxonomy", "term"]
 [render]
   timeout = "2m"
 
+[timeout]
+render = "2m"
+
 [params]
     # Set to enable Plausible Analytics.
     plausible_domain = ""
@@ -34,6 +37,7 @@ disableKinds = ["section", "taxonomy", "term"]
     [[build.cacheBusters]]
         source = 'layouts/.*'
         target = '(json)'
+    timeout = "2m"
 
 [caches]
     [caches.images]

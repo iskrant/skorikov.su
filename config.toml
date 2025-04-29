@@ -42,10 +42,11 @@ disableKinds = ["section", "taxonomy", "term"]
 
 [imaging]
     resampleFilter = "CatmullRom"
-    quality        = 71
+#    quality        = 71
+    quality        = 100
     anchor         = "smart"
     [imaging.exif]
-        disableDate    = false
+        disableDate    = true
         disableLatLong = true
         includeFields  = 'Artist|LensModel|FNumber|ExposureTime'
 
